@@ -3,6 +3,6 @@
    <description></description>
    <name>TC1</name>
    <tag></tag>
-   <comment></comment>
+   <comment>anchors.size(): $anchors.size()</comment>
    <testCaseGuid>71820629-78cf-4d8a-bfb4-ce244fcd8cd1</testCaseGuid>
 </TestCaseEntity>
