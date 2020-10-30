@@ -1,6 +1,7 @@
 import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.RestRequestObjectBuilder
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -59,7 +60,7 @@ links.each { link ->
 		.withRestRequestMethod("GET")
 		.withRestUrl(link)
 		.build()
-	def response = WS.sendRequest(request)
+	ResponseObject response = WS.sendRequest(request)
 	int statusCode = response.getStatusCode()
 	WebUI.comment("Request to ${link} was responded with StatusCode ${statusCode}")
 	// do anything special you like for each StatusCode values
